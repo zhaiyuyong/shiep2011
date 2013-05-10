@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+BODY {
+	font-size: 20px;/*body 元素的字体大小、字体族和背景颜色*/
+	font-family: Times New Roman,"楷体",sans-serif;
+	background-color: gray;
+}
+a{
+	color: #26670D;
+	text-decoration: none;	
+}
+a:HOVER {
+	text-decoration: none;
+}
+
+INPUT ,TEXTAREA {
+	font-size: 20px;
+	font-family: Tahoma,"楷体",serif;
+	border: 1px solid #909090;
+	color: #454545;
+	width: 200px;
+}
+
+

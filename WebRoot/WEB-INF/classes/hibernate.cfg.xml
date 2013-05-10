@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+
+		<!-- Database connection settings -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost/j2ee</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">900618</property>
+
+		<!-- JDBC connection pool (use the built-in) -->
+		<property name="connection.pool_size">1</property>
+
+		<!-- SQL dialect -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+		<!-- Enable Hibernate's automatic session context management -->
+		<property name="current_session_context_class">thread</property>
+
+		<!-- Disable the second-level cache  -->
+		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+
+		<property name="format_sql">true</property>
+
+		<!-- Drop and re-create the database schema on startup -->
+		 
+		<property name="hbm2ddl.auto">update</property>
+		 
+		<!-- annotation的使用更加方便 -->
+		<mapping class="com.zyy.javaee.project.po.Information"/>
+		<mapping class="com.zyy.javaee.project.po.Student"/>
+		<mapping class="com.zyy.javaee.project.po.Message"/>
+		<mapping class="com.zyy.javaee.project.po.Manager"/>
+		<mapping class="com.zyy.javaee.project.po.RepMessage"/>
+	<!--
+	<mapping resource="test/hibernate/Customer.hbm.xml"/>
+	<mapping resource="test/hibernate/Orders.hbm.xml"/>
+	
+	-->
+	</session-factory>
+
+</hibernate-configuration>

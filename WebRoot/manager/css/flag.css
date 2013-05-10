@@ -1,0 +1,31 @@
+
+BODY {
+	font-size: 16px;/*body 元素的字体大小、字体族和背景颜色*/
+	font-family: Times New Roman,"楷体",sans-serif;
+	background-color: white;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	color: #26670D;
+	text-decoration: none;	
+}
+a:HOVER {
+	text-decoration: underline;
+}
+
+td {
+
+	text-align: center;
+	margin-top: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.no{
+ background-color: fuchsia;
+}
+.no1 {
+ background-color: gray;
+}

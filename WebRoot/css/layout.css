@@ -1,0 +1,381 @@
+/* CSS Document */
+
+html, body, ul, ol, li, p, h1 , h2, h3, h4, h5, h6, form, fieldset, a, div, img, blockquote
+{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+A{
+	text-decoration: none;
+	}
+
+html, body
+{
+	font-family: Arial;
+	background: url(../images/bg.gif);
+}
+
+body
+{
+	font-size: 12px;
+}
+
+.clear
+{
+	clear: both;
+	font-size: 0;
+	height: 0;
+}
+
+.center
+{
+	text-align: center;
+	margin: 0 auto;
+}
+
+a
+{
+	color: #161616;
+}
+
+/*************************************************** Typography ***************************************************/
+
+h1, h2, h3, h4, h5
+{
+	color: #636130;
+	padding-top: 10px;
+	padding-bottom: 8px;
+	font-weight: normal;
+	width: 405px;
+}
+
+h1
+{
+	padding-top: 30px;
+	font-size: 20px;
+}
+
+h2
+{
+	font-size: 18px;
+}
+
+h3
+{
+	font-size: 16px;
+	padding-bottom: 4px;
+}
+
+h4
+{
+	font-size: 15px;
+}
+
+h5
+{
+	font-size: 14px;
+	padding-bottom: 4px;
+}
+
+h6
+{
+	font-size: 12px;
+	padding-bottom: 0px;
+}
+
+p
+{
+	color: #161616;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin-top: 6px;
+	padding-bottom: 14px;
+	line-height: 1.3;
+	width: 405px;
+}
+
+/*************************************************** Layout Divs ***************************************************/
+
+#main-wrapper
+{
+	width: 717px;
+	margin: 0 auto;
+}
+
+#main-logo
+{
+	width: 717px;
+	height: 108px;
+}
+#main-logo img {
+float:left;
+}
+
+#main-logo span {
+float:left;
+font-size:28px;
+color:#fff;
+padding:25px 0 0 15px;
+}
+
+#banner
+{
+	width: 717px;
+	height: 109px;
+	margin: 0;
+}
+
+#navigation
+{
+	width: 717px;
+	height: 28px;
+	border-bottom: 3px solid #fff;
+	background: url(../images/nav-arrow.jpg) repeat-x;
+}
+
+#main-content
+{
+	width: 708px;
+	padding-left: 8px;
+	background: url(../images/content-bg.jpg);
+}
+
+#main-content-bot
+{
+	width: 717px;
+	height: 64px;
+	font-size: 0;
+	background: url(../images/content-bg-bot.gif) no-repeat;
+	margin-bottom: 0px;
+}
+
+#footer
+{
+	width: 715px;
+	margin: 0 auto;
+	text-align:right;
+}
+
+#content-xtra-bg
+{
+	background: url(../images/content-bg-company.jpg) bottom right no-repeat;
+}
+
+#main-content-bot
+{
+	width: 717px;
+	height: 64px;
+	font-size: 0;
+	margin-bottom: 20px;
+}
+
+#main-xtra-bot
+{
+	width: 717px;
+	height: 15px;
+	font-size: 0;
+	background: url(../images/content-bot-company.jpg) no-repeat;
+	margin-bottom: 20px;
+}
+#top-news {
+	float:left;
+	width:547;
+	padding-left:5px;
+	margin-top: 18px;
+	padding-right: 6px;
+}
+
+#latest-news
+{
+	float: right;
+	width: 170px;
+	padding-right: 0px;
+	border-left: 2px solid #cacaca;
+	margin-top: 1px;
+	padding-left: 6px;
+}
+
+/*************************************************** Latest News Styles ***************************************************/
+#top-news h1 {
+	font-size:16px;
+	align : left;
+	display: inline;
+}
+
+#top-news h2 {
+	font-size: 12px;
+	align : right;
+	display: inline;
+}
+#top-news h3 {
+	font-size: 8px;
+	align : right;
+	display: inline;
+	color:#999999;
+}
+#top-news a {
+	font-size:15px;
+}
+#top-news a:link {
+	text-decoration: none;
+	color:#666666;
+}
+#top-news a:visited {
+	text-decoration: none;
+	color:#99CCaa;
+}
+#top-news a:hover {
+	text-decoration: none;
+	color:#606000;
+}
+#top-news a:active {
+	text-decoration: none;	
+}
+
+#listnews  {
+	align:left;
+	font-size: 12px;
+}
+
+#latest-news h3
+{
+	width: 168px;
+	font-weight: bold;
+	background: url(../images/special_0.jpg) ;
+}
+
+#text-content {
+	width:400px;
+	font-size:12px;
+	align:left;
+}
+
+#latest-news h6
+{
+	font-weight: bold;
+	color: #7f7c43;
+	padding-bottom: 0;
+}
+
+#latest-news p
+{
+	font-size: 12px;
+	width: 165px;
+	padding-bottom: 8px;
+}
+
+#latest-news .news-item
+{
+	border-bottom: 1px solid #c8c58d;
+	width: 160px;
+	padding-bottom: 16px;
+	margin-bottom: 14px;
+}
+
+#latest-news .news-pict1
+{
+	width:160px;
+	height:41px;
+	background: url(../images/special_1.jpg);
+}
+#latest-news .news-pict2
+{
+	width:160px;
+	height:54px;
+}
+
+#latest-news .news-item h3
+{
+	padding: 0 0 10px 0;
+	width: 165px;
+	font-weight: normal;
+	
+}
+
+#latest-news .news-item-last
+{
+	width: 184px;
+	padding-bottom: 16px;
+}
+
+/*************************************************** Main Content Styles ***************************************************/
+
+#main-content img.white-border
+{
+	border: 2px solid #fff;
+	margin-right: 18px;
+}
+
+#main-content ul
+{
+	padding-left: 20px;
+}
+
+#main-content ul li
+{
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #161616;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 20px;
+	background: url(../images/list-arrow.gif) left no-repeat;
+	list-style: none;
+}
+
+/*************************************************** Navigation Styles ***************************************************/
+
+#navigation ul
+{
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	padding: 0;
+	margin-left: 5px;
+	margin-top: 1px;
+	display: inline;
+}
+
+#navigation ul li
+{
+	display: inline;
+	float: left;
+	font-weight: normal;
+}
+
+#navigation ul li a:link,
+#navigation ul li a:visited
+{
+	display: inline;
+	float: left;
+	text-decoration: none;
+	color: #000;
+	font-size: 13px;
+	text-align: center;
+	padding-left: 14px;
+	padding-right: 16px;
+	background: url(../images/nav-divide.jpg) center right no-repeat;
+}
+
+#wrap {
+	word-wrap:break-word;
+	width:444px;
+}
+
+#navigation ul li.last-item, #navigation ul li.last-item a
+{
+	background: none;
+}
+
+#navigation ul li a:active,
+#navigation ul li a:hover
+{
+	color: red;
+}
+
+#home #navigation ul li a#home-link, #news #navigation ul li a#news-link, #company #navigation ul li a#company-link, #products #navigation ul li a#products-link, #contact #navigation ul li a#contact-link
+{	
+	color: #d0cfac;
+}

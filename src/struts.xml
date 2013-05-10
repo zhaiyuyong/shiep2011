@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	 <!--<constant name="struts.enable.DynamicMethodInvocation" value="false" />-->
+    <!--  <constant name="struts.devMode" value="true" />-->
+    
+    
+    <!-- 管理员模块 -->
+	<package name="studentManager" extends="struts-default" namespace="/manager">
+	
+		<global-results>
+			<result name="exception">/exception.jsp</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="exception" exception="java.lang.Exception"></exception-mapping>
+		</global-exception-mappings>
+		
+	
+	
+	
+		<action name="manager" class="manager">
+			<result name="success">/manager/main.jsp</result>
+			<result name="quit">/manager/login.jsp</result>
+		</action>
+		<action name="studentAction" class="studentAction">
+			<result name="list">/manager/allStudent.jsp</result>
+			<result name="delete" type="redirectAction">studentAction!list.action</result>
+			<result name="toupdate">/manager/updateStudent.jsp</result>
+			<result name="update" type="redirectAction">studentAction!list.action</result>
+			<result name="add" type="redirectAction">studentAction!list.action</result>		
+		</action>
+		<action name="informationAction" class="informationAction">
+			<result name="list">/manager/allInformation.jsp</result>
+			<result name="delete" type="redirectAction">informationAction!list.action</result>
+			<result name="look">/manager/updateInformation.jsp</result>
+			<result name="update" type="redirectAction">informationAction!list.action</result>
+			<result name="add" type="redirectAction">informationAction!list.action</result>		
+		</action>
+		
+		<action name="messageAction" class="messageAction">
+			<result name="old">/manager/allMessage.jsp</result>
+			<result name="xin">/manager/newMessage.jsp</result>
+			<result name="delete" type="redirectAction">messageAction!old.action</result>
+		</action>
+		
+		<!-- AJAX  action -->
+		<action name="sendeamilAction" class="sendeamilAction">
+		</action>
+		<action name="searchstuAction" class="searchstuAction">	
+		</action>	
+		<action name="repajaxAction" class="repajaxAction">
+		</action>
+	</package>
+	
+	
+	<!-- 主页模块 -->
+	<package name="index" extends="struts-default" namespace="/">
+	
+	
+	
+	<default-action-ref name="indexAction"></default-action-ref>
+		<action name="indexAction" class="indexAction">
+			<result name="success">/index.jsp</result>
+			<result name="info">/information.jsp</result>
+			<result name="all">/moreinformations.jsp</result>
+			<result name="message">/allMessage.jsp</result>
+		</action>
+		
+		
+		
+	</package>
+	
+	
+	
+	<!-- 学生模块 -->
+	<package name="student" extends="struts-default" namespace="/user">
+		
+		<global-results>
+			<result name="exception">/exception.jsp</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="exception" exception="java.lang.Exception"></exception-mapping>
+		</global-exception-mappings>
+		
+		
+		<action name="student" class="student">
+			<result name="success">/user/main.jsp</result>
+			<result name="fail">/user/login.jsp</result>
+			<result name="quit">/user/login.jsp</result>
+		</action>
+		<action name="userstuAction" class="userstuAction">
+			<result name="myinfo">/user/myinfo.jsp</result>
+			<result name="update">/user/myinfo.jsp</result>
+			
+		</action>
+		<action name="stumessageAction" class="stumessageAction">
+			<result name="add" type="redirectAction">stumessageAction!all.action</result>
+			<result name="all">/user/allMessage.jsp</result>
+		</action>
+		<action name="geteamilAction" class="geteamilAction">
+			<result name="success">/user/Message.jsp</result>
+		</action>
+		
+	
+	</package>
+	
+	
+
+
+</struts>
+	
